@@ -19,7 +19,7 @@ import totalpending from '../../assets/tasks/totalpending.png';
 import totalcomplete from '../../assets/tasks/totalcomplete.png';
 import { FcStatistics } from "react-icons/fc";
 import AddTimesheetModal from './modals/AddTimesheet';
-import axios from 'axios';
+import axios from '../../config/axios';
 
 function Timesheets() {
   const [isAddTimesheetModalOpen, setIsAddTimesheetModalOpen] = useState(false);

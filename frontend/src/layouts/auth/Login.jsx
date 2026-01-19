@@ -4,7 +4,7 @@ import login from "../../assets/register/login.png"
 import email from "../../assets/register/email.png"
 import password from "../../assets/register/password.png"
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../../config/axios';
 import { useToast, Spinner } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ function Login() {
             localStorage.setItem('tm_token', response.data.token);
             navigate('/admin/dashboard')
         } catch (error) {
-            let Error = error.response.data.message
+            let Error = error?.response?.data?.message || 'Unable to connect to server. Please check if the backend is running.';
             setFormData({
                 email: '',
                 password: ''

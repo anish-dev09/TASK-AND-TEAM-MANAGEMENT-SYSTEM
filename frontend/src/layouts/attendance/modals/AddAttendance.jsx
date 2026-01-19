@@ -10,7 +10,7 @@ import {
     Button,
     Select,
 } from '@chakra-ui/react';
-import axios from 'axios';
+import axios from '../../../config/axios';
 import { useToast, Spinner } from '@chakra-ui/react';
 
 function AddAttendanceModal({ isOpen, onClose }) {

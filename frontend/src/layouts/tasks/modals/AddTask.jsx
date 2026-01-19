@@ -13,7 +13,7 @@ import {
     Tag,
     Select,
 } from '@chakra-ui/react';
-import axios from 'axios';
+import axios from '../../../config/axios';
 import { useToast, Spinner } from '@chakra-ui/react';
 
 function AddTaskModal({ isOpen, onClose }) {

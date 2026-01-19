@@ -6,7 +6,7 @@ import email from "../../assets/register/email.png"
 import password from "../../assets/register/password.png"
 import cpassword from "../../assets/register/cpassword.png"
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../../config/axios';
 import { useToast, Spinner } from '@chakra-ui/react';
 
 function Register() {
@@ -44,7 +44,7 @@ function Register() {
             });
             setLoading(false);
         } catch (error) {
-            let Error = error.response.data.message
+            let Error = error?.response?.data?.message || 'Unable to connect to server. Please check if the backend is running.';
             toast({
                 title: Error,
                 status: 'error',

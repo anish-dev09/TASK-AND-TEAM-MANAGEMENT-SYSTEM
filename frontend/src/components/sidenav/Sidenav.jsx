@@ -7,7 +7,7 @@ import { FaTasks } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
 import { MdInsertInvitation } from "react-icons/md";
 import { LuLogOut } from "react-icons/lu";
-import profile from '../../assets/sidenav/profile.png';
+import profile from '../../assets/sidenav/profile2.jpeg';
 import { Link, useLocation } from "react-router-dom";
 
 function Sidenav() {
@@ -17,8 +17,8 @@ function Sidenav() {
     <div className='sidenav-main-container'>
       <div className='sidenav-profile-container'>
         <img className='sidenav-profile-img' src={profile} alt="Profile" />
-        <p className='sidenav-profile-name'>Sundar Gurung</p>
-        <p className='sidenav-profile-email'>sundargurung360@gmail.com</p>
+        <p className='sidenav-profile-name'>DIVY RITIK</p>
+        <p className='sidenav-profile-email'>divyritik09@gmail.com</p>
       </div>
       <div className='sidenav-list-main-container'>
         <Link to="/admin/dashboard"><div className={`sidenav-list ${location.pathname === "/admin/dashboard" ? "default-hover" : ""}`}><span><MdDashboard className='sidenav-icon' /></span><p className='sidenav-list-text'>Dashboard</p></div></Link>

@@ -19,7 +19,7 @@ import totalpending from '../../assets/tasks/totalpending.png';
 import totalcomplete from '../../assets/tasks/totalcomplete.png';
 import { FcStatistics } from "react-icons/fc";
 import AddEmployeeModal from './modals/AddEmployee';
-import axios from 'axios'
+import axios from '../../config/axios'
 
 function Employees() {
   const [isAddEmployeeModalOpen, setIsAddEmployeeModalOpen] = useState(false);

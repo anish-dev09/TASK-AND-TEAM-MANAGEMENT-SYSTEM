@@ -10,7 +10,7 @@ import totalpending from '../../assets/tasks/totalpending.png';
 import totalcomplete from '../../assets/tasks/totalcomplete.png';
 import { FcStatistics } from "react-icons/fc";
 import Navbar from '../../components/navbar/Navbar';
-import axios from 'axios';
+import axios from '../../config/axios';
 
 function Dashboard() {
   const [dashboardData, setDashboardData] = useState([]);
